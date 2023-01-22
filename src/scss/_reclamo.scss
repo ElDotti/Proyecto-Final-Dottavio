@@ -1,0 +1,21 @@
+.reclamo{
+    .tamaño{ 
+        @extend %tamaño;
+ 
+        @media (max-width: 575px){
+                max-width: 1000px;  
+                width: 450px;
+        }
+        @media (max-width: 445px){
+            max-width: 1000px;  
+            width: 400px;
+    }
+        @media (max-width: 393px){
+                max-width: 1000px;  
+                width: 200px;
+                display: flex;
+                justify-content: center;
+         
+        }
+    }
+}

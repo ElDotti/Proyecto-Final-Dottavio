@@ -1,0 +1,67 @@
+@import "cardindex.scss";
+@import "cardproducto.scss";
+@import "extend.scss";
+@import "footer.scss";
+@import "perfiles.scss";
+@import "reclamo.scss";
+@import "ubicacion.scss";
+@import "reset.scss";
+@import "nav.scss";
+@import "formulario.scss";
+@import "footer.scss";
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+/* Todo esto es Index*/
+@mixin perfilcolor ($background){
+    background-color: $background;
+
+}
+.perfiloide, .perfiloide2{
+    @include perfilcolor(aquamarine);
+}
+.d-block{
+    height: 500px;
+}
+header{
+    margin-top: 50px;
+}
+.slider{
+    width: 100%;
+    padding: 10px
+
+}
+.imagenFooter{
+    width: 100%;
+    padding: 5px;
+}
+/* Aca termina Index*/
+
+/* Todo esto es productos*/
+.tituloProductos{
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.espacio{
+    height: 20px;
+}
+.btnFiltro{
+    display: none;
+}
+@media (max-width: 992px) {
+    .btnFiltro{
+        display: block;
+    }
+    
+}
+.btn-darko{
+    width: 150px;
+    margin-left: 20px;
+
+}
+
+/* Aca termina productos*/
+

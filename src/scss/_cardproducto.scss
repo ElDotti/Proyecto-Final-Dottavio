@@ -1,0 +1,77 @@
+.cardProducto{
+    .card-img-top{
+        height: 100px;
+        width: 100px;
+        align-self: center;
+    }
+    .card-body{
+        color: rgb(0, 0, 0);
+    }
+    .filtros{
+        width: 300px;
+        height: 600px;
+        top: 100px;
+        padding: 5px;
+    }
+    .categorias{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .ulStyle{
+        list-style-type: none;
+    }
+    @extend %cardRegular;
+    height: 350px;
+    .carta{
+        height: 300px;
+    }
+    @media (max-width: 1200px){
+        .carta4,.carta3{
+            display: none;
+        }
+        .card-img-top{
+            width: 100px;
+        }
+    
+        }
+        @media (max-width: 992px) {
+            .filtros{
+                display: none;
+            }
+        }
+        
+        @media (max-width: 862px) {
+            .carta3{
+                display: none;
+            }
+            
+        }
+        @media (max-width: 576px) {
+            .carta2{
+                display: none;
+            }
+            .card-title{
+                display: flex;
+                justify-content: center;
+            }
+            .card{
+                justify-content: center;
+                align-items: center;
+        
+        
+            }
+            .text-end{
+                display: flex;
+                justify-content: center;
+        
+        
+            }
+           
+        
+        
+            
+        }
+
+}

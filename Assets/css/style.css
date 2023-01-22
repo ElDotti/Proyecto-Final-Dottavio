@@ -1,0 +1,466 @@
+@charset "UTF-8";
+.cardIndex .card-img-top {
+  height: 300px;
+  width: 200px;
+  align-self: center;
+  overflow: hidden;
+}
+.cardIndex .carta {
+  height: 400px;
+  width: 300px;
+  justify-content: center;
+}
+.cardIndex .carta .text-end {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 330px) {
+  .cardIndex .carta {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.cardProducto {
+  height: 350px;
+}
+.cardProducto .card-img-top {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+}
+.cardProducto .card-body {
+  color: rgb(0, 0, 0);
+}
+.cardProducto .filtros {
+  width: 300px;
+  height: 600px;
+  top: 100px;
+  padding: 5px;
+}
+.cardProducto .categorias {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.cardProducto .ulStyle {
+  list-style-type: none;
+}
+.cardProducto .carta {
+  height: 300px;
+}
+@media (max-width: 1200px) {
+  .cardProducto .carta4, .cardProducto .carta3 {
+    display: none;
+  }
+  .cardProducto .card-img-top {
+    width: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .cardProducto .filtros {
+    display: none;
+  }
+}
+@media (max-width: 862px) {
+  .cardProducto .carta3 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .cardProducto .carta2 {
+    display: none;
+  }
+  .cardProducto .card-title {
+    display: flex;
+    justify-content: center;
+  }
+  .cardProducto .card {
+    justify-content: center;
+    align-items: center;
+  }
+  .cardProducto .text-end {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cardIndex .carta, .cardProducto .carta {
+  border: 3px solid black;
+}
+.cardIndex .carta .card-title, .cardProducto .carta .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cardIndex .carta .card-text, .cardProducto .carta .card-text {
+  padding: 0px;
+  margin: 0px;
+}
+.cardIndex .carta .btn-dark, .cardProducto .carta .btn-dark {
+  width: 100px;
+  margin: 5px;
+}
+.cardIndex .carta .card-text, .cardProducto .carta .card-text {
+  padding: 0px;
+  margin: 0px;
+}
+
+.ubicacion .redesUbicacion, .reclamo .tamaño {
+  font-size: 20px;
+  max-width: 380px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+footer div > p {
+  font-size: 20px;
+  text-align: end;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 481px) {
+  footer > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  footer .bodyContacto {
+    Overflow-x: hidden;
+  }
+}
+@media (max-width: 393px) {
+  footer > div > p {
+    font-size: 15px;
+  }
+  footer .bodyContacto {
+    Overflow-x: hidden;
+  }
+}
+
+.perfiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.perfiles .perfiloide {
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .perfiles .perfiloide {
+    margin: 0px;
+  }
+  .perfiles .perfiloide .perfil1 {
+    width: 200px;
+  }
+  .perfiles .perfiloide div span h2 {
+    font-size: 40px;
+  }
+  .perfiles .perfiloide div > span > p {
+    width: 400px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .perfiles .perfiloide div span h2 {
+    font-size: 30px;
+    margin: 5px;
+  }
+  .perfiles .perfiloide div > span > p {
+    width: 250px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .perfiles .perfiloide .perfil1 {
+    width: 150px;
+    height: 150px;
+  }
+  .perfiles .perfiloide div span h2 {
+    font-size: 30px;
+    margin: 5px;
+  }
+  .perfiles .perfiloide div > span > p {
+    width: 250px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .perfiles .perfiloide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .perfiles .perfiloide .perfil1 {
+    width: 300px;
+    height: 200px;
+  }
+  .perfiles .perfiloide div > span > p {
+    margin-left: 10px;
+  }
+}
+.perfiles .perfiloide2 {
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin: 0px;
+}
+@media (max-width: 800px) {
+  .perfiles .perfiloide2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  .perfiles .perfiloide2 div > p {
+    margin: 10px;
+    width: 400px;
+    font-size: 15px;
+  }
+  .perfiles .perfiloide2 div > h2 {
+    margin-left: 30px;
+  }
+  .perfiles .perfiloide2 .perfil3 {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  .perfiles .perfiloide2 div > p {
+    width: 300px;
+  }
+  .perfiles .perfiloide2 div > h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .perfiles .perfiloide2 div > p {
+    width: 250px;
+  }
+}
+.perfiles .perfil1 {
+  width: 250px;
+  height: 250px;
+}
+.perfiles .perfil2 {
+  width: 200px;
+  height: 200px;
+}
+.perfiles div span h2 {
+  font-size: 50px;
+}
+.perfiles div h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.perfiles div > span > p {
+  width: 500px;
+  padding: 5px;
+  font-size: 20px;
+}
+@media (max-width: 1279px) {
+  .perfiles .perfil2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 1279px) {
+  .perfiles .perfil2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .perfiles .perfil3 {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .reclamo .tamaño {
+    max-width: 1000px;
+    width: 450px;
+  }
+}
+@media (max-width: 445px) {
+  .reclamo .tamaño {
+    max-width: 1000px;
+    width: 400px;
+  }
+}
+@media (max-width: 393px) {
+  .reclamo .tamaño {
+    max-width: 1000px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 893px) {
+  .ubicacion .redesUbicacion {
+    display: none;
+  }
+}
+@media (max-width: 893px) {
+  .ubicacion .mapa {
+    width: 500px;
+  }
+}
+@media (max-width: 572px) {
+  .ubicacion .mapa {
+    width: 400px;
+  }
+}
+@media (max-width: 473px) {
+  .ubicacion .mapa {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media (max-width: 393px) {
+  .ubicacion .mapa {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media (max-width: 325px) {
+  .ubicacion .mapa {
+    width: 200px;
+    height: 300px;
+  }
+}
+.ubicacion .parrafoUbicacion {
+  font-size: 20px;
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+
+.navletra .navbar-toggler {
+  font-weight: bold;
+  border: solid;
+}
+.navletra div > div > ul > li > a {
+  font-size: 30px;
+  font-weight: bold;
+  color: #86009E;
+}
+.navletra .fa-brands {
+  font-size: 40px;
+}
+
+.formulario {
+  width: 500px;
+  margin: 5px;
+}
+@media (max-width: 850px) {
+  .formulario {
+    width: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 300px;
+  }
+}
+.formulario .btnContacto {
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  margin-right: 23px;
+}
+
+footer div > p {
+  font-size: 20px;
+  text-align: end;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 481px) {
+  footer > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  footer .bodyContacto {
+    Overflow-x: hidden;
+  }
+}
+@media (max-width: 393px) {
+  footer > div > p {
+    font-size: 15px;
+  }
+  footer .bodyContacto {
+    Overflow-x: hidden;
+  }
+}
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Todo esto es Index*/
+.perfiloide, .perfiloide2 {
+  background-color: aquamarine;
+}
+
+.d-block {
+  height: 500px;
+}
+
+header {
+  margin-top: 50px;
+}
+
+.slider {
+  width: 100%;
+  padding: 10px;
+}
+
+.imagenFooter {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Aca termina Index*/
+/* Todo esto es productos*/
+.tituloProductos {
+  margin-left: 40px;
+  font-weight: bolder;
+}
+
+.espacio {
+  height: 20px;
+}
+
+.btnFiltro {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .btnFiltro {
+    display: block;
+  }
+}
+.btn-darko {
+  width: 150px;
+  margin-left: 20px;
+}
+
+/* Aca termina productos*//*# sourceMappingURL=style.css.map */

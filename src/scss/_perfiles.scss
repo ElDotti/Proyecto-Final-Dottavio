@@ -1,0 +1,149 @@
+.perfiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .perfiloide{
+        
+        border: solid;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        @media (max-width: 800px){
+            margin: 0px;
+
+            .perfil1{
+                width: 200px;
+            }
+            div span h2{
+                font-size: 40px;
+            
+            }
+            div > span > p{
+                width: 400px;
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 620px){
+            div span h2{
+                font-size: 30px;
+                margin: 5px;
+            
+            }
+            div > span > p{
+                width: 250px;
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 490px){
+            .perfil1{
+                width: 150px;
+                height: 150px;
+            }
+            div span h2{
+                font-size: 30px;
+                margin: 5px;
+            
+            }
+            div > span > p{
+                width: 250px;
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 490px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .perfil1{
+                width: 300px;
+                height: 200px;
+            }
+            div > span > p{
+                margin-left: 10px
+            }
+        }
+
+    }
+    .perfiloide2{
+        @extend %perfiloide !optional;
+        border: solid;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        margin: 0px;
+
+        @media (max-width: 800px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            div > p {
+                margin: 10px;
+                width: 400px;
+                font-size: 15px;
+            }
+            div > h2{
+                margin-left: 30px;
+            }
+            .perfil3{
+                display: block;
+            }
+        }
+        @media (max-width: 420px){
+            div > p {
+                width: 300px;
+            }
+            div > h2{
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 320px){
+            div > p {
+                width: 250px;
+            }
+        }
+
+    }
+    .perfil1{
+        width: 250px;
+        height: 250px;
+    }
+    .perfil2{
+        width: 200px;
+        height: 200px;
+    }
+    
+    div span h2{
+        font-size: 50px;
+    
+    }
+    div h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    div > span > p{
+        width: 500px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    @media (max-width: 1279px){
+        .perfil2{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    @media (max-width: 1279px){
+        .perfil2{
+            width: 150px;
+            height: 150px;
+        }              
+    }
+    @media (max-width: 1000px){
+        .perfil3{
+          display: none;
+        }              
+    }
+}

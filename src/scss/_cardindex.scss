@@ -1,0 +1,26 @@
+.cardIndex{
+    @extend %cardRegular;
+    .card-img-top{
+        height: 300px;
+        width: 200px;
+        align-self: center;
+        overflow: hidden;
+    }
+    .carta{
+        height: 400px;
+        width: 300px;
+        justify-content: center;
+        .text-end{
+            display: flex;
+            justify-content: center;
+
+        }
+
+    }
+    @media (max-width: 330px){
+        .carta{
+            width: 250px;
+            height: 350px;
+        }
+    }
+}
